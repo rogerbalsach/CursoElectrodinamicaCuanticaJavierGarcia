@@ -1781,7 +1781,173 @@
   <div class="capitulo-20 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (20.1)
+        (20.1) Dispersión de Compton
+      </span>
+      <span class="formula">
+        e^-_{r_1}(\vec{p}_1) \gamma_{r_2}(\vec{p}_2) \to e^-_{r_3}(\vec{p}_3) \gamma_{r_4}(\vec{p}_4)
+      </span>
+      <span class="formula">
+        {}_{{\textstyle\mathstrut}\mathrm{out\!\!}}\braket{e^-_{r_3}(\vec{p}_3) \gamma_{r_4}(\vec{p}_4) \vert e^-_{r_1}(\vec{p}_1) \gamma_{r_2}(\vec{p}_2)}_\mathrm{in}
+        \sim \braket{e^-_{r_3}(\vec{p}_3) \gamma_{r_4}(\vec{p}_4) \vert \mathrm{T}\{\mathcal{L}_{\mathrm{int}}(x_1)\mathcal{L}_{\mathrm{int}}(x_2)\} \vert e^-_{r_1}(\vec{p}_1) \gamma_{r_2}(\vec{p}_2)} + \cdots
+      </span>
+      <span class="formula-titulo">
+        Ver fórmulas <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-83">(TCC 83.1)</a>,
+        <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-77">(TCC 77.3)</a>.
+      </span>
+      <!-- LaTeX code (requires amsmath and simplewick)
+      \begin{align*}
+        \mathrm{T} \{
+            \mathcal{L}_{\mathrm{int}}(x_1) \mathcal{L}_{\mathrm{int}}(x_2)
+        \}
+        = \ & q^2 N[
+            \bar{\psi}(x_1) \gamma^\mu A_\mu(x_1)
+            \contraction{}{\psi}{(x_1)}{\bar{\psi}}
+            \psi(x_1) \bar{\psi}(x_2) \gamma^\nu A_\nu(x_2) \psi(x_2)
+        ] \\&
+        + q^2 N[
+            \contraction{}{\bar{\psi}}{
+                (x_1) \gamma^\mu A_\mu(x_1) \psi(x_1) \bar{\psi}(x_2)
+                \gamma^\nu A_\nu(x_2)
+            }{\psi} \bar{\psi}(x_1) \gamma^\mu A_\mu(x_1) \psi(x_1)
+            \bar{\psi}(x_2) \gamma^\nu A_\nu(x_2) \psi(x_2)
+        ]
+        + \cdots
+      \end{align*} -->
+      <object data="imgs/20_1_1.svg" type="image/svg+xml"></object></br>
+      <span class="formula-titulo">
+        Ver fórmula <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-75">(TCC 75.3)</a>.
+      </span>
+      <!-- LaTeX code (requires amsmath and simplewick)
+      \begin{align*}
+        N[
+            \bar{\psi}(x_1) \gamma^\mu A_\mu(x_1)
+            \contraction{}{\psi}{(x_1)}{\bar{\psi}}
+            \psi(x_1) \bar{\psi}(x_2)
+            \gamma^\nu A_\nu(x_2) \psi(x_2)
+        ]
+        = &
+        \bar{\psi}^-(x_1) \gamma^\mu A^-_\mu(x_1)
+        \contraction{}{\psi}{(x_1)}{\bar{\psi}}
+        \psi(x_1) \bar{\psi}(x_2)
+        \gamma^\nu A^+_\nu(x_2) \psi^+(x_2) \\&
+        + \bar{\psi}^-(x_1) \gamma^\mu A^-_\nu(x_2)
+        \contraction{}{\psi}{(x_1)}{\bar{\psi}}
+        \psi(x_1) \bar{\psi}(x_2) \gamma^\nu A^+_\mu(x_1) \psi^+(x_2)
+        + \cdots
+      \end{align*} -->
+      <object data="imgs/20_1_2.svg" type="image/svg+xml"></object></br>
+      <!-- LaTeX code (requires amsmath and simplewick)
+      \begin{align*}
+        N[
+            \contraction{}{\bar{\psi}}{
+                (x_1) \gamma^\mu
+                A_\mu(x_1) \psi(x_1) \bar{\psi}(x_2)
+                \gamma^\nu A_\nu(x_2)
+            }{\psi} \bar{\psi}(x_1) \gamma^\mu A_\mu(x_1) \psi(x_1)
+            \bar{\psi}(x_2) \gamma^\nu A_\nu(x_2) \psi(x_2)
+        ] &
+        = N[
+            \bar{\psi}(x_2) \gamma^\mu A_\mu(x_2)
+            \contraction{}{\psi}{(x_2)}{\bar{\psi}}
+            \psi(x_2) \bar{\psi}(x_1)
+            \gamma^\nu A_\nu(x_1) \psi(x_1)
+        ] \\&
+        = \bar{\psi}^-(x_2) \gamma^\mu A^-_\mu(x_2)
+        \contraction{}{\psi}{(x_2)}{\bar{\psi}}
+        \psi(x_2) \bar{\psi}(x_1)
+        \gamma^\nu A^+_\nu(x_1) \psi^+(x_1) \\&
+        \phantom{=}
+        + \bar{\psi}^-(x_2) \gamma^\mu A^-_\nu(x_1)
+        \contraction{}{\psi}{(x_2)}{\bar{\psi}}
+        \psi(x_2) \bar{\psi}(x_1) \gamma^\nu A^+_\mu(x_2) \psi^+(x_1)
+        + \cdots
+      \end{align*} -->
+      <object data="imgs/20_1_3.svg" type="image/svg+xml"></object></br>
+      <span class="formula-titulo">
+        Ver fórmula <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-75">(TCC 75.2)</a>.
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (20.2) Contracción campos fermiónicos
+      </span>
+      <!-- LaTeX code (requires amsmath, physics and simplewick)
+      \begin{equation*}
+        \contraction{}{\psi}{(x_1)}{\bar{\psi}} \psi(x_1) \bar{\psi}(x_2)
+        = \ev{\mathrm{T} \{\psi(x_1) \bar{\psi}(x_2)\}}{0}
+        = i \int
+        \frac{\gamma^\mu q_\mu + m}{q^2 - m^2 + i \varepsilon}
+        e^{-iq(x_1 - x_2)} \frac{\mathrm{d}^4 q}{(2 \pi)^4}
+      \end{equation*} -->
+      <object data="imgs/20_2_1.svg" type="image/svg+xml"></object></br>
+      <span class="formula-titulo">
+        Ver fórmula <a target="_blank" href="https://crul.github.io/CursoElectrodinamicaCuanticaJavierGarcia/#capitulo-11">(QED 11.4)</a><br>
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoElectrodinamicaCuanticaJavierGarcia/#capitulo-14">(QED 14.4)</a> Acción campos fermiónicos sobre estados
+      </span>
+      <span class="formula">
+        \psi^+(x) \ket{e^-_{r}(\vec{p})} = u_r(\vec{p}) e^{-i p x} \ket{0}
+      </span>
+      <span class="formula">
+        \bar{\psi}^+(x) \ket{e^+_{r}(\vec{p})} = \bar{v}_r(\vec{p}) e^{-i p x} \ket{0}
+      </span>
+      <span class="formula">
+        \bra{e^+_{r}(\vec{p})} \psi^-(x) = \bra{0} v_r(\vec{p}) e^{i p x}
+      </span>
+      <span class="formula">
+        \bra{e^-_{r}(\vec{p})} \bar{\psi}^-(x) = \bra{0} \bar{u}_r(\vec{p}) e^{i p x}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (20.3) Acción campo electromagnético sobre estados
+      </span>
+      <span class="formula">
+        A_\mu^+(x) \ket{\gamma_{r}(\vec{p})} = \epsilon_{r,\mu}(\vec{p}) e^{-i p x} \ket{0}
+      </span>
+      <span class="formula">
+        \bra{\gamma_{r}(\vec{p})} A_\mu^-(x) = \bra{0} \epsilon^*_{r,\mu}(\vec{p}) e^{i p x}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (20.4) Amplitud dispersión de Compton 1
+      </span>
+      <span id="Feynman201" class="feynman"></span>
+      <span class="formula">
+        i \mathcal{M}_1 = i q^2 \epsilon^*_{r_4,\mu}(\vec{p}_4) \epsilon_{r_2,\nu}(\vec{p}_2) \bar{u}_{r_3}(\vec{p}_3) \gamma^\mu \frac{\gamma^\alpha (p_1 + p_2)_\alpha + m}{(p_1 + p_2)^2 - m^2} \gamma^\nu u_{r_1}(\vec{p}_1)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (20.5) Amplitud dispersión de Compton 2
+      </span>
+      <span id="Feynman202" class="feynman"></span>
+      <span class="formula">
+        i \mathcal{M}_2 = i q^2 \epsilon^*_{r_4,\mu}(\vec{p}_4) \epsilon_{r_2,\nu}(\vec{p}_2) \bar{u}_{r_3}(\vec{p}_3) \gamma^\nu \frac{\gamma^\alpha (p_1 - p_4)_\alpha + m}{(p_1 - p_4)^2 - m^2} \gamma^\mu u_{r_1}(\vec{p}_1)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (20.6) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{1) Demostrar las siguientes ecuaciones:}
+      </span>
+      <span class="formula">
+        A^+_\nu(x_2) \psi^+(x_2) \ket{e^-_{r_1}(\vec{p}_1) \gamma_{r_2}(\vec{p}_2)} = \epsilon_{r_2,\nu}(\vec{p}_2) u_{r_1}(\vec{p}_1) e^{-i (p_1 + p_2) x_2} \ket{0}
+      </span>
+      <span class="formula">
+        \bra{e^-_{r_3}(\vec{p}_3) \gamma_{r_4}(\vec{p}_4)} \bar{\psi}^-(x_1) A^-_\mu(x_1) = \bra{0} \bar{u}_{r_3}(\vec{p}_3) \epsilon^*_{r_4,\mu}(\vec{p}_4) e^{i (p_3 + p_4) x_1}
+      </span>
+      <span class="formula formula-texto">
+        \text{2) Calcular el valor de } \mathcal{M}_2 \text{ en la fórmula (20.4).}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
       </span>
     </div>
   </div>
